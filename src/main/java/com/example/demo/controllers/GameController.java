@@ -60,7 +60,7 @@ public class GameController {
 
         if(!allowedMovesList.contains(playerMove)){
             return new ResponseEntity<String>("Move: "+ playerMove +
-                    ", is not a valid move (Allowed moves are: rock, paper, scissor)",
+                    ", is not a valid move (Allowed moves are: rock, paper, scissors)",
                     HttpStatus.NOT_ACCEPTABLE);
         } else if(!validUsername(playerName)){
             return new ResponseEntity<String>("Missing username",HttpStatus.NOT_FOUND);
