@@ -14,7 +14,8 @@ How to run the API:
 In order to run the api you need to make sure that you have Apache maven installed together with a valid java sdk.
 Package the API into a jar file by running "mvn clean package" then execute the jar file by running java -jar {jarfile} in a cli tool.
 
-In order to test the API i have provided a list of curl commands below. If you prefer testing via postman you can import the curl commands below.
+In order to test the API i have provided a list of curl commands below. If you prefer testing via postman (recommended) you can import the curl commands below.
+To import into postman klick on "File" in right upper corner, then on "Import..." then paste the curl command as raw test and click continue.
 
 
 CURL calls for testing api:
