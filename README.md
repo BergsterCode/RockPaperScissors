@@ -1,8 +1,12 @@
 # RockPaperScissors
 This is a small REST API where two players can face off in rock paper scissors. The api has four endpoints:
+
 localhost:8080/api/games/
+
 localhost:8080/api/games/{gameID}
+
 localhost:8080/api/games/{gameID}/join
+
 localhost:8080/api/games/{gameID}/move
 
 
