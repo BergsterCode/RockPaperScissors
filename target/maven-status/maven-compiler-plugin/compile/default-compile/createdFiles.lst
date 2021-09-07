@@ -1,0 +1,4 @@
+com\example\demo\controllers\GameController.class
+com\example\demo\DemoApplication.class
+com\example\demo\service\GameService.class
+com\example\demo\model\Game.class
