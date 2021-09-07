@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -39,6 +41,11 @@ public class Game {
 
     public void setActiveGame(boolean activeGame) {
         this.activeGame = activeGame;
+    }
+
+    @JsonIgnore
+    public HashMap<String, String> getPlayers(){
+        return players;
     }
 
     public HashMap<String, String> getPlayerMove() {
@@ -90,23 +97,4 @@ public class Game {
         return true;
     }
 
-    public void determineWinner(){
-        List<String> playerList = new ArrayList<String>(players.keySet());
-        String player1 = playerList.get(0);
-        String player2 = playerList.get(1);
-
-        if(players.get(player1).equals(players.get(player2))){
-            setWinner("Draw! " + player1 + " and " + player2 + " both chose: " + players.get(player1));
-            setActiveGame(false);
-        } else {
-            String rules = "rockpaperscissorsrock";
-            if(rules.contains(players.get(player1)+players.get(player2))){
-                setWinner(player2 + " won the game!");
-                setActiveGame(false);
-            } else {
-                setWinner(player1 + " won the game!");
-                setActiveGame(false);
-            }
-        }
-    }
 }
