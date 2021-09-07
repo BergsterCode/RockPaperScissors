@@ -12,7 +12,8 @@ localhost:8080/api/games/{gameID}/move
 
 How to run the API:
 In order to run the api you need to make sure that you have Apache maven installed together with a valid java sdk.
-Package the API into a jar file by running "mvn clean package". Alternative you can run mvn clean package in your IDE maven plugin (intellij etc), then execute the jar file by running java -jar {jarfile} in a cli tool.
+Package the API into a jar file by running "mvn clean package". Alternative you can run mvn clean package in your IDE maven plugin (intellij etc).
+I have included a jar file in the target folder aswell in this case. Then execute the jar file by running java -jar {jarfile} in a cli tool.
 
 In order to test the API i have provided a list of curl commands below. If you prefer testing via postman (recommended) you can import the curl commands below.
 To import into postman klick on "File" in right upper corner, then on "Import..." then paste the curl command as raw test and click continue.
