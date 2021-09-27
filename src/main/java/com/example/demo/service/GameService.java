@@ -79,10 +79,6 @@ public class GameService {
 
     public Game fetchGame(UUID gameId){
         Game game = gamesMap.get(gameId);
-
-        if(game.isActiveGame()){
-
-        }
         return gamesMap.get(gameId);
     }
 
